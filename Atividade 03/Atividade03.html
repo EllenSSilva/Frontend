@@ -1,0 +1,61 @@
+\\ Código React
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Fundamentos</a></li>
+            <li><a href="#">Fundamentos</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Array</a></li>
+            <li><a href="#">Carros</a></li>
+            <li><a href="#">Nomes</a></li>
+            <li><a href="#">Numeros</a></li>
+
+        </ul>
+    </nav>
+            <h2>Números</h2>
+            <div id="contador">0</div>
+            <button id="incrementar">+</button>
+            <button id="decrementar">-</button>
+        </div>
+        <script>
+            // Seleciona os elementos do DOM
+            const contador = document.getElementById('contador');
+            const botaoIncrementar = document.getElementById('incrementar');
+            const botaoDecrementar = document.getElementById('decrementar');
+        
+            // Inicializa o valor do contador
+            let count = 0;
+        
+            // Função para atualizar a exibição do contador
+            function atualizarContador() {
+                contador.textContent = count;
+            }
+        
+            // Função para incrementar o valor
+            function incrementar() {
+                count++;
+                atualizarContador();
+            }
+        
+            // Função para decrementar o valor
+            function decrementar() {
+                count--;
+                atualizarContador();
+            }
+        
+            // Adiciona eventos de clique aos botões
+            botaoIncrementar.addEventListener('click', incrementar);
+            botaoDecrementar.addEventListener('click', decrementar);
+        </script>
+        
+</body>
+</html>

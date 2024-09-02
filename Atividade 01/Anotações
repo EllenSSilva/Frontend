@@ -1,0 +1,67 @@
+/* em andamento !!!!*/
+
+Para adicionar um sublinhado azul apenas ao item "Tabela" da sua lista, você pode usar CSS para estilizar o texto. Você pode incluir o CSS diretamente no seu arquivo HTML usando uma tag <style>, ou usar um arquivo CSS externo.
+
+Aqui está como você pode fazer isso diretamente no seu arquivo HTML:
+
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+    <style>
+        /* Estilizando o item da lista que contém o texto "Tabela" */
+        .highlight {
+            text-decoration: underline;
+            text-decoration-color: blue; /* Define a cor do sublinhado */
+            text-decoration-style: solid; /* Define o estilo do sublinhado (opcional) */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="highlight">Tabela</li>
+        <li>Formulário</li>
+    </ul>
+</body>
+</html>
+Explicação:
+CSS dentro da tag <style>: O CSS está dentro da tag <style> no <head>. Isso é útil para estilos que são específicos para esta página.
+
+Classe .highlight: A classe .highlight é adicionada ao item de lista que você deseja estilizar. Usamos a propriedade text-decoration para adicionar o sublinhado, e text-decoration-color para definir a cor do sublinhado como azul.
+
+Aplicação da classe: A classe .highlight é aplicada ao item de lista com o texto "Tabela". Isso faz com que apenas esse item tenha o sublinhado azul.
+
+Se você preferir usar um arquivo CSS externo, você pode fazer algo assim:
+
+Crie um arquivo CSS, por exemplo styles.css:
+css
+Copiar código
+/* styles.css */
+.highlight {
+    text-decoration: underline;
+    text-decoration-color: blue; /* Define a cor do sublinhado */
+    text-decoration-style: solid; /* Define o estilo do sublinhado (opcional) */
+}
+Atualize seu HTML para incluir o arquivo CSS:
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+<body>
+    <ul>
+        <li class="highlight">Tabela</li>
+        <li>Formulário</li>
+    </ul>
+</body>
+</html>
+Dessa forma, a estilização do item da lista será aplicada a partir do arquivo CSS externo.
