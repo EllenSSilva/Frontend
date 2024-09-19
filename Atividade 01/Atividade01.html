@@ -1,50 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 01</title>
+    <title>Página Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+        }
+        img {
+            max-width: 100px;
+            height: auto;
+            margin: 10px;
+        }
+        .content {
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
-    <ul>
-        <li>Tabela</li>
-        <li>Formulário</li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a href="tabelas.html">Tabelas</a></li> <!-- Novo link para a página de tabelas -->
+            <li><a href="formulario.html">Formulário</a></li>
+        </ul>
+    </nav>
 
-<h3>Página Principal</h3>
+    <div class="content">
+        <h1>Página Principal</h1>
 
-<h4>Parágrafos</h4>
+        <h2>Parágrafos</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quas amet minus laudantium ducimus neque aspernatur rerum magni beatae alias, culpa doloremque obcaecati maxime expedita esse voluptate placeat. Maxime, asperiores adipisci!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, officiis sunt tempore aliquid exercitationem adipisci minus esse cum quo sit deserunt reiciendis veniam dolor laboriosam facere animi, asperiores in similique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, laborum assumenda porro, eaque, cupiditate veniam quasi nemo perspiciatis unde alias pariatur dicta optio sapiente neque quas amet officia adipisci aperiam!</p>
 
-<h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, rem labore id debitis repellendus molestiae dicta, in nesciunt doloribus non quo molestias quae obcaecati cupiditate itaque magni aliquam fugit harum!</h5><br>
-<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit recusandae, architecto corrupti accusantium beatae? Perspiciatis molestiae voluptatibus provident recusandae labore. Dolor autem accusamus incidunt nam, illo deserunt ipsa modi.</h6><br>
-<h7>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam corrupti eveniet dolore! Tenetur, facere. Veniam, alias blanditiis sapiente error iure ullam officiis possimus in deleniti consequuntur doloribus autem amet odio!</h7><br>
+        <h2>Imagens</h2>
+        <img src="img/imagem01.jpeg" alt="Imagem 1">
+        <img src="img/imagem02.jpeg" alt="Imagem 2">
 
-<h8>Imagens</h8>
+        <h2>Links</h2>
+        <p><a href="https://www.google.com" target="_blank">Clique aqui para ir ao Google</a></p>
+        <p><a href="https://www.google.com" target="_blank">Clique aqui para ir ao Google</a></p>
+        <img src="img/iesblogo.png" alt="IESB Logo">
 
-<img src="img/imagem01.jpeg"/>
-<img src="img/imagem02.jpeg"/>
+        <h2>Listas</h2>
+        <h3>Listas Não Ordenadas</h3>
+        <ul>
+            <li>Distrito Federal
+                <ul>
+                    <li>Ceilândia</li>
+                    <li>Taguatinga</li>
+                </ul>
+            </li>
+            <li>Goiás</li>
+            <li>São Paulo</li>
+            <li>Rio de Janeiro</li>
+        </ul>
 
-<h9>Links</h9>
-<a href="https://aluno.iesb.br/aluno/#/home/avisos"</a>
-    <a href="https://aluno.iesb.br"</a>
-        <img src=""/>
-
-<h10>Listas</h10>
-<h11>Listas não ordenadas</h11>
-<h1>Distrito federal
-    1.Ceilandia
-    2.Taguatinga
-    3.Asa sul
-</h1>
-<h2>Goias</h2>
-<h3>São Paulo</h3>
-<h4>Rio de Janeiro</h4>
-
-<h5>Listas ordenadas</h5>
-<h1>Distrito federal</h1>
-<h2>Goias</h2>
-<h3>São Paulo</h3>
-<h4>Rio de Janeiro</h4>
+        <h3>Listas Ordenadas</h3>
+        <ol>
+            <li>Distrito Federal</li>
+            <li>Goiás</li>
+            <li>São Paulo</li>
+            <li>Rio de Janeiro</li>
+        </ol>
+    </div>
 
 </body>
 </html>
