@@ -29,7 +29,7 @@ nav ul li a {
 .container {
   width: 80%;
   margin: 20px auto;
-  text-align: center;
+  text-align:left;
 }
 
 h1 {
